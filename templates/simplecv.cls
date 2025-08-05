@@ -57,7 +57,7 @@
 \newcommand{\resumeSubheading}[4]{
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textbf{#2} \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{\textit{\small#3}} & \textbf{\textit{\small #4}} \\
     \end{tabular*}\vspace{2pt}
 }
 
@@ -118,7 +118,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=2pt]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=2pt, leftmargin=0.2in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{4pt}}
 
 % New command for summary section
@@ -132,15 +132,15 @@
 % New commands for company with multiple roles
 \newcommand{\resumeCompanyRole}[4]{
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{#2} \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{\textit{\small#1}} & \textbf{#2} \\
+      \textbf{\textit{\small#3}} & \textbf{\textit{\small #4}} \\
     \end{tabular*}\vspace{2pt}
 }
 
 \newcommand{\resumeCompanySubRole}[2]{
   \vspace{4pt}
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textbf{\textit{\small#1}} & \textbf{\textit{\small #2}} \\
     \end{tabular*}\vspace{2pt}
 }
 
