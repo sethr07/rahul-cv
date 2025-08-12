@@ -13,8 +13,8 @@ build-cv:
 	fi
 	@echo "Building CV for $(COMPANY)..."
 	@cd $(SRC) && pdflatex $(CV)
-	@cd $(SRC) && mv cv.pdf ../$(BIN)/RS-CV-$(COMPANY).pdf
-	@echo "CV built successfully as RS-CV-$(COMPANY).pdf in $(BIN) directory"
+	@cd $(SRC) && mv cv.pdf ../$(BIN)/RahulSeth-CV-$(COMPANY).pdf
+	@echo "CV built successfully as RahulSeth-CV-$(COMPANY).pdf in $(BIN) directory"
 
 clean:
 	@echo "Cleaning LaTeX auxiliary files from $(SRC) directory..."
