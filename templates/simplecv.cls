@@ -125,14 +125,14 @@
 \newcommand{\resumeSummary}[1]{
   \vspace{-2pt}\item
   \begin{tabular*}{0.97\textwidth}{p{0.97\textwidth}}
-    \normalsize#1
+    \normalsize{#1}
   \end{tabular*}\vspace{-5pt}
 }
 
 % New commands for company with multiple roles
 \newcommand{\resumeCompanyRole}[4]{
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{\textit{\small#1}} & \textbf{#2} \\
+      \textbf{{\small#1}} & \textbf{#2} \\
       \textbf{\textit{\small#3}} & \textbf{\textit{\small #4}} \\
     \end{tabular*}\vspace{2pt}
 }
