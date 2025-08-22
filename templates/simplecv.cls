@@ -132,7 +132,7 @@
 % New commands for company with multiple roles
 \newcommand{\resumeCompanyRole}[4]{
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{{\small#1}} & \textbf{#2} \\
+      \textbf{#1} & \textbf{#2} \\
       \textbf{\textit{\small#3}} & \textbf{\textit{\small #4}} \\
     \end{tabular*}\vspace{2pt}
 }
