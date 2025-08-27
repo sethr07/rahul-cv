@@ -11,6 +11,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{array}
 \usepackage{hyphenat}
 \usepackage{fontawesome}
 \input{glyphtounicode}
@@ -49,24 +50,24 @@
 \begin{document}
 
 % Heading 
-\begin{center}
-    \textbf{\Huge \scshape Rahul Seth} \\[8pt]
-    \small
-    +91-9717861405 \quad
-    \href{mailto:srahulseth7@gmail.com}{\textcolor{RoyalBlue}{srahulseth7@gmail.com}} \quad
-    \href{https://www.linkedin.com/in/rahuls7}{\textcolor{RoyalBlue}{LinkedIn}} \quad
-    Gurgaon, Haryana
-\end{center}
+\noindent
+\begin{minipage}[t]{0.60\textwidth}
+    \textbf{\Huge \scshape Rahul Seth}
+\end{minipage}%
+\raisebox{3pt}{\begin{minipage}[t]{0.40\textwidth}\raggedleft
+    \small +91-9717861405, Gurgaon, Haryana \\[6pt]
+    \small \href{mailto:srahulseth7@gmail.com}{\textcolor{RoyalBlue}{srahulseth7@gmail.com}}, \href{https://www.linkedin.com/in/rahuls7}{\textcolor{RoyalBlue}{LinkedIn}}
+\end{minipage}}
 
 \vspace{-14pt}
 % Professional Summary
 \section{Summary}
 \resumeSubHeadingListStart
-\resumeSummary{Product-focused engineer with 3+ years across embedded systems, web apps, and AI.
-Started in embedded development, which taught me product thinking - now applied to AI solutions.
-Built AI tools using LangChain/Agno/OpenAI reducing lawyer review time from hours to minutes and
-automating QA processes. Track record: 3 energy products generating \$4M+ revenue, 2 AI apps saving
-1,500+ engineering hours}
+\resumeSummary{AI/ML Engineer with 3+ years building cloud-native AI infrastructure and production ML pipelines. 
+Specialized in LLM deployment, evaluation, and optimization using Python, distributed data processing, and MLOps 
+best practices. Developed scalable AI systems with LangChain, custom RAG architectures, and real-time document 
+processing across legal and engineering domains. Delivered 2 production platforms saving 1,500+ engineering hours 
+annually through automated model workflows and intelligent data pipeline optimization.}
 \resumeSubHeadingListEnd
 
 \vspace{4pt}
