@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{simplecv}[2023/06/05 My custom CV class]
-\LoadClass[letterpaper,11pt]{article}
+\LoadClass[a4paper,11pt]{article}
 
 \RequirePackage{titlesec}
 \titleformat{\section}         % Customise the \section command 
