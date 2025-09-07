@@ -8,7 +8,7 @@
                                % small capitals (\scshape) and left aligned (\raggedright)
   {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
   {}                           % Can be used to insert code before the heading
-  [\titlerule \vspace{-5pt}]   % Inserts a horizontal line after the heading and adds some vertical space
+  [\noindent\rule{\textwidth}{2pt} \vspace{-5pt}]   % Inserts a thicker horizontal line after the heading and adds some vertical space
 
 
 
@@ -48,7 +48,7 @@
 }
 
 \newcommand{\resumeItem}[1]{
-  \item\small{
+  \item\normalsize{
     {#1 \vspace{2pt}}
   }
 }
@@ -129,10 +129,17 @@
   \end{tabular*}\vspace{-5pt}
 }
 
+% New command for intro section with thicker line
+\newcommand{\resumeIntroSection}{
+  \vspace{-4pt}
+  \noindent\rule{\textwidth}{1.5pt}
+  \vspace{-5pt}
+}
+
 % New commands for company with multiple roles
 \newcommand{\resumeCompanyRole}[4]{
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{#2} \\
+      \textbf{\large#1} & \textbf{#2} \\
       \textbf{\textit{\small#3}} & \textbf{\textit{\small #4}} \\
     \end{tabular*}\vspace{2pt}
 }

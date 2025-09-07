@@ -28,15 +28,14 @@
 \addtolength{\evensidemargin}{-0.75in}
 \addtolength{\textwidth}{1.5in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{2.0in}
+\addtolength{\textheight}{1.5in}
 
-\raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
 % Optimize itemize spacing
 \setlist{nosep}
-\setlist[itemize]{topsep=0pt,partopsep=0pt,parsep=0pt,itemsep=0pt}
+\setlist[itemize]{topsep=0pt,partopsep=0pt,parsep=0pt,itemsep=3pt}
 
 % Sections formatting
 \titleformat{\section}{
@@ -61,13 +60,13 @@
 
 \vspace{-14pt}
 % Professional Summary
-\section{Summary}
+\section{}
 \resumeSubHeadingListStart
 \resumeSummary{Solutions Engineer specializing in AI transformation and product
 engineering across energy, oil \& gas, and legal sectors.
 Technical expertise in Python, GenAI tooling (OpenAI SDKs, Llama, etc.),
-and full-stack development with focus on improving process efficiency.
-Adept in cross functional collaboration in global environments.
+and full-stack development with focus on \mbox{improving} process efficiency.
+Adept at cross-functional collaboration in global environments.
 }
 
 
@@ -79,8 +78,9 @@ Adept in cross functional collaboration in global environments.
 
     \resumeCompanyRole{Baker Hughes}{India}{Lead AI Engineer - AI + Full Stack + Data Engineering}{Mar'25 \textbf{--} Present}
     \resumeItemListStart
-        \resumeItem{Formulated an AI automation framework to address process bottlenecks across QA, project engineering and translations. Secured funding and resources from the product council to create the product road map and lead the POC}
-        \resumeItem{Built AI document review platform for authors, QA teams and Extract transform load (ETL) pipelines for automated content analysis; reducing review time by 80\%}
+        \resumeItem{Formulated an AI automation framework to address process bottlenecks across QA, project engineering, and translations}
+        \resumeItem{Secured funding and resources from the product council to create the product road map through Q4'26 and lead the POC}
+        \resumeItem{Built AI document review platform for authors, QA teams, and Extract transform load (ETL) pipelines for automated content analysis; reducing review time by 80\%}
         \resumeItem{Projected to save 1,500+ hours annually and over \$30K/project by freeing up senior engineering resources}
         \resumeItem{Integrated Mistral and Llama models using LangChain; implemented chunking for document processing and RAG for content analysis}
         \resumeItem{Led 2-dev team building cloud platform serving 30+ users daily; delivered Python/FastAPI, React, Docker, Azure infrastructure}
@@ -92,46 +92,43 @@ Adept in cross functional collaboration in global environments.
         \resumeItem{Collaborated with Product Managers on consumer interface using Figma; reduced design-to-development time by 2 weeks}
         \resumeItem{Built automated deployment pipeline saving 3 hrs/release through CI/CD, static analysis, and testing across multiple consumer products}
         \resumeItem{Led product rescue initiative with 3-developer team; delivered 10 priority customer features and resolved 20+ user bugs within timelines}
-        \resumeItem{Developed BI dash pulling from Kanban and GitHub APIs; tracked bug trends, static analysis, unit test metrics with Python/Plotly}
+        \resumeItem{Built Python BI dashboard integrating Kanban/GitHub APIs for bug trends, code health, and testing metrics}
     \resumeItemListEnd
 
-\vspace{6pt}
+\vspace{4pt}
 
-\resumeSubheading{Baker Hughes}{Ireland}{Software Engineer - Data Engineering + Embedded Software}{Aug'22 \textbf{--} Aug'23}
+\resumeCompanyRole{Baker Hughes}{Ireland}{Software Engineer - Data Engineering + Embedded Software}{Aug'22 \textbf{--} Aug'23}
 \resumeItemListStart
-    \resumeItem{Graduate engineer promoted to SWE in 5 months through product development and data processing contributions}
+    \resumeItem{Graduate engineer promoted to SWE in 5 months through product development and data engineering contributions}
     \resumeItem{Built ETL pipeline for 20+ sensor algorithms; reduced validation time by 60\% and caught critical errors pre-production}
-    \resumeItem{Developed Python testing framework with Windows APIs for UI/UX workflows; automated product validation cycles for consumer devices}
+    \resumeItem{Built Python/Windows API test framework; automated consumer device UI/UX validation, saved 6 hours per cycle}
     \resumeItem{Retained by organization during planned India relocation after demonstrating strong performance in first engineering role}
 \resumeItemListEnd
 
-\vspace{6pt}
+\vspace{4pt}
 
-\resumeSubheading{Global Strategic Law Council}{India}{AI Strategy Consultant (Pro Bono) - AI Frameworks + Full Stack}{Jan'25 \textbf{--} Present}
+\resumeCompanyRole{Global Strategic Law Council}{Remote/USA}{AI Strategy Consultant (Pro Bono) - AI Frameworks + Full Stack}{Jan'25 \textbf{--} Present}
 \resumeItemListStart
     \resumeItem{Collaborated with 6 lawyers to build legal analytics platform processing 200+ case files for strategic insights}
     \resumeItem{Built dual-LLM system with OpenAI/Gemini SDKs; automated legal analysis with RAG; enabled 3x case volume increase}
-    \resumeItem{Deployed production platform serving 10+ daily users; architected cloud infrastructure with Python/FastAPI, React, Digital Ocean}
-    \resumeItem{Built Google Apps Script ETL pipeline automating user registration; eliminated 1 FTE of manual data entry across 4 spreadsheets}
+    \resumeItem{Deployed prod platform serving 10+ daily users; architected cloud infrastructure with Python/FastAPI, React, Digital Ocean}
+    \resumeItem{Built Python ETL pipeline automating user registration; eliminated 1 FTE of manual data entry across 4 spreadsheets}
     \resumeItemListEnd
 
 % Education
 \section{Education}
 \resumeSubheading{Trinity College, Dublin}{Ireland}{BAI Computer Engineering}{}
 \resumeItemListStart
-\resumeItem{\textbf{Activities:} VP Indian Society, Lead Formula Trinity, Voluntary Tuition Program, Sustainability project top 5 in class}
+\resumeItem{VP Indian Society, Lead Formula Trinity, Voluntary Tuition Program, Sustainability project rated top 5 in class}
 \resumeItemListEnd
-
-\vspace{4pt}
 
 % Skills
 \section{Skills}
-\vspace{2pt}
 \resumeSubHeadingListStart
-\small{\item{
-\textbf{AI/ML: }{OpenAI/LLama SDKs, Agno, LangChain/Graph, Llama CPP, Spacy, HuggingFace, Embedders} \\ \vspace{1pt}
+\normalsize{\item{
+\textbf{AI/ML: }{OpenAI/Llama SDKs, Agno, LangChain/Graph, Llama CPP, Spacy, HuggingFace, Embedders} \\ \vspace{1pt}
 \textbf{Programming \& Frameworks: }{Python, Git, ETL, PostgreSQL, React, Shell/Batch/Make, Figma, C/C++} \\ \vspace{1pt}
-\textbf{Cloud \& DevOps: }{Docker, Azure, GCP, Supabase, DigitalOcean, Linux, Sentry, FastAPI, GitHub Actions, Parasoft} \\
+\textbf{Cloud \& DevOps: }{Docker, Azure, GCP, Supabase, DigitalOcean, Linux, Sentry, FastAPI, GitHub Actions, Parasoft} \\ \vspace{1pt}
 }}
 \resumeSubHeadingListEnd
 
