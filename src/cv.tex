@@ -11,6 +11,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{array}
 \usepackage{hyphenat}
 \usepackage{fontawesome}
 \input{glyphtounicode}
@@ -27,15 +28,14 @@
 \addtolength{\evensidemargin}{-0.75in}
 \addtolength{\textwidth}{1.5in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{1.5in}
 
-\raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
 % Optimize itemize spacing
 \setlist{nosep}
-\setlist[itemize]{topsep=0pt,partopsep=0pt,parsep=0pt,itemsep=0pt}
+\setlist[itemize]{topsep=0pt,partopsep=0pt,parsep=0pt,itemsep=3pt}
 
 % Sections formatting
 \titleformat{\section}{
@@ -49,120 +49,91 @@
 \begin{document}
 
 % Heading 
-\begin{center}
-    \textbf{\Huge \scshape Rahul Seth} \\[8pt]
-    \small
-    +91 919717861405 \quad
-    \href{mailto:srahulseth7@gmail.com}{srahulseth7@gmail.com} \quad
-    \href{https://www.linkedin.com/in/rahuls7}{LinkedIn} \quad
-    Gurgaon, Haryana
-\end{center}
+\noindent
+\begin{minipage}[t]{0.60\textwidth}
+    \textbf{\Huge \scshape Rahul Seth}
+\end{minipage}%
+\raisebox{3pt}{\begin{minipage}[t]{0.40\textwidth}\raggedleft
+    \small +91-9717861405 $|$ Gurgaon, Haryana \\[6pt]
+    \small \href{mailto:srahulseth7@gmail.com}{\textcolor{RoyalBlue}{srahulseth7@gmail.com}} $|$ \href{https://rahul-seth.com}{\textcolor{RoyalBlue}{rahul-seth.com}} $|$ \href{https://www.linkedin.com/in/rahuls7}{\textcolor{RoyalBlue}{LinkedIn}}
+\end{minipage}}
 
+\vspace{-14pt}
 % Professional Summary
-\section{Summary}
+\section{}
 \resumeSubHeadingListStart
-\resumeSummary{Software engineer with \$2M+ in product revenue and a track record of building intelligent systems that scale.
-At Baker Hughes, I’ve led data automation projects saving 1,500+ hours annually, architected AI workflows, and shipped backend
-infrastructure across embedded and cloud platforms. Now expanding into data engineering to build the systems behind smarter, faster decision-making.
+\resumeSummary{Solutions Engineer specializing in AI transformation and product
+engineering across energy, oil \& gas, and legal sectors.
+Technical expertise in Python, GenAI tooling (OpenAI SDKs, Llama, etc.),
+and full-stack development with focus on \mbox{improving} process efficiency.
+Adept at cross-functional collaboration in global environments.
 }
+
+
 \resumeSubHeadingListEnd
 
 \vspace{4pt}
 % Work Ex
 \section{Work Experience}
 
-\resumeCompanyRole{Baker Hughes}{India}{Software Engineer}{Sep'23 \textbf{--} Present}
-\resumeItemListStart
-    \resumeItem{Retained through strategic Ireland-to-India relocation with expanded leadership and consulting responsibilities across 5 products}
-    \resumeItem{Led technical product management and UI/UX across 5 products; served as project lead on 1 with 3 successful market releases}
-    \resumeItem{Introduced CI/CD automation for builds, releases, and PR workflows; saving 30-40 minutes per PR across 300-400 PRs per project}
-    \resumeItem{Authored 5+ design records and led adoption workshops, standardizing algorithms and policies across product teams company-wide}
-    \resumeItem{Designed Python data pipeline to convert SVG exports into structured JSON for graphics rendering in embedded products}
-\resumeItemListEnd
+    \resumeCompanyRole{Baker Hughes}{India}{Lead AI Engineer - AI + Full Stack + Data Engineering}{Mar'25 \textbf{--} Present}
+    \resumeItemListStart
+        \resumeItem{Formulated an AI automation framework to address process bottlenecks across QA, project engineering, and translations}
+        \resumeItem{Secured funding and resources from the product council to create the product road map through Q4'26 and lead the POC}
+        \resumeItem{Built AI document review platform for authors, QA teams, and SMEs with Extract Transform Load (ETL) pipelines for automated content analysis; reducing review time by 80\%}
+        \resumeItem{Integrated Mistral and Llama models using LangChain; implemented chunking for document processing and RAG for content analysis}
+        \resumeItem{Projected to save 1,500+ hours annually and over \$30K/project by freeing up senior engineering resources}
+        \resumeItem{Led 2-dev team building cloud platform serving 30+ users daily; delivered Python/FastAPI, React, Docker, Azure infrastructure}
+    \resumeItemListEnd
 
-\vspace{4pt}
-
-\resumeCompanySubRole{AI Initiative Leader}{Mar'25 \textbf{--} Present}
-\resumeItemListStart
-    \resumeItem{Identified 6 bottlenecks for AI integration, developed comprehensive business case and secured CTO approval for multi-project initiative}
-    \resumeItem{Spearheaded company-wide AI transformation, leading assigned team of 2 engineers across 5+ active product lines}
-    \resumeItem{Aligned QA and SME teams to curate labeled test cases for RAG pipelines using vector DBs and pre-trained LLMs in QA automation}
-    \resumeItem{Delivered first AI deployment projecting 1,500+ engineering hours saved annually, establishing proof-of-concept for broader adoption}
+    \resumeCompanySubRole{Software Engineer - DevOps + Web Apps + Embedded Software}{Sep'23 \textbf{--} Present}
+    \resumeItemListStart
+        \resumeItem{Product engineer leading consumer interface design and development across 4 product lines with over \$10M value}
+        \resumeItem{Collaborated with Product Managers on consumer interface using Figma; reduced design-to-development time by 2 weeks}
+        \resumeItem{Built automated deployment pipeline saving 3 hrs/release through CI/CD, static analysis, and testing across multiple consumer products}
+        \resumeItem{Led product rescue initiative with 3-developer team; delivered 10 priority customer features and resolved 20+ user bugs within timelines}
+        \resumeItem{Built Python BI dashboard integrating Kanban/GitHub APIs for bug trends, code health, and testing metrics}
     \resumeItemListEnd
 
 \vspace{4pt}
 
-\resumeSubheading{Baker Hughes}{Ireland}{Software Engineer}{Aug'22 \textbf{--} Aug'23}
-\resumeItemListStart
-    \resumeItem{Joined as a Graduate Software Engineer and was rapidly promoted to SWE 1 within 5 months}
-    \resumeItem{Introduced Figma-based design reviews with product managers, improving design quality by 85\% and reducing iteration time by 60\%}
-    \resumeItem{Developed Windows UI/UX simulator with 10+ key features, used to train 30+ product specialists; reduced time-to-market by 3 months}
-    \resumeItem{Built Python simulator for 20 proprietary algorithms, reduced testing by 60\% and caught critical error pre-hardware testing, saving costs}
-\resumeItemListEnd
 
 \vspace{4pt}
 
-\resumeSubheading{Global Strategic Law Council}{India}{AI Product Leader - Pro Bono}{Jan'25 \textbf{--} Present}
+\resumeCompanyRole{Global Strategic Law Council}{Remote/USA}{AI Strategy Consultant (Pro Bono) - AI Frameworks + Full Stack}{Jan'25 \textbf{--} Present}
 \resumeItemListStart
-    \resumeItem{Cornell/Parsons-backed NGO providing pro bono legal aid to communities affected by climate mobility issues}
-    \resumeItem{Led AI case summarizer processing 200-600 page legal documents, reducing lawyer review time from 8-10 hours/case to minutes}
-    \resumeItem{Architected full-stack system on Digital Ocean using PostgreSQL and Supabase buckets for real-time LLM feedback and data flows}
-    \resumeItem{Collaborated with lawyers to define product requirements and optimize user workflows for case analysis capabilities}
-\resumeItemListEnd
+    \resumeItem{Collaborated with 6 lawyers to build legal analytics platform processing 200+ case files for strategic insights}
+    \resumeItem{Built dual-LLM system with OpenAI/Gemini SDKs; automated legal analysis with RAG; enabled 3x case volume increase}
+    \resumeItem{Deployed prod platform serving 10+ daily users; architected cloud infrastructure with Python/FastAPI, React, Digital Ocean}
+    \resumeItem{Built Python ETL pipeline automating user registration; eliminated 1 FTE of manual data entry across 4 spreadsheets}
+    \resumeItemListEnd
 
+\vspace{4pt}
+
+\resumeCompanyRole{Baker Hughes}{Ireland}{Software Engineer - Data Engineering + Embedded Software}{Aug'22 \textbf{--} Aug'23}
+\resumeItemListStart
+    \resumeItem{Graduate engineer promoted to SWE in 5 months through product development and data engineering contributions}
+    \resumeItem{Built ETL pipeline for 20+ sensor algorithms; reduced validation time by 60\% and caught critical errors pre-production}
+    \resumeItem{Built Python/Windows API test framework; automated consumer device UI/UX validation, saved 6 hours per cycle}
+    \resumeItem{Retained by organization during planned India relocation after demonstrating strong performance in first engineering role}
+\resumeItemListEnd
 
 % Education
 \section{Education}
-\resumeSubheading{Trinity College, Dublin}{Ireland}{BAI Computers and Electronics Engineering}{2018 \textbf{--}2022}
+\resumeSubheading{Trinity College, Dublin}{Ireland}{BAI Computer Engineering}{}
 \resumeItemListStart
-\resumeItem{\textbf{Dissertation:} Survey \& analysis of cryptographic keys on port 25 using Python to identify weak keys and improve security}
-\resumeItem{\textbf{Activities:} VP Indian Society, Lead Formula Trinity, Voluntary Tuition Program, Sustainability project top 5 in class}
+\resumeItem{VP Indian Society, Lead Formula Trinity, Voluntary Tuition Program, Sustainability project rated top 5 in class}
 \resumeItemListEnd
-
-\vspace{4pt}
 
 % Skills
 \section{Skills}
-\vspace{3pt}
 \resumeSubHeadingListStart
-\small{\item{
-\textbf{Programming: }{Python, C/C++, SQL (PostgreSQL), Shell/Batch/Make, Git; ETL, REST APIs, Data Modeling} \\ \vspace{2pt}
-\textbf{Technologies: }{Azure, Digital Ocean, Supabase, Docker, Linux, Figma, Agno, LangChain, RAG, LLMs, React}
+\normalsize{\item{
+\textbf{AI/ML: }{OpenAI/Llama SDKs, Agno, LangChain/Graph, Llama CPP, Spacy, HuggingFace, Embedders} \\ \vspace{1pt}
+\textbf{Programming \& Frameworks: }{Python, Git, ETL, PostgreSQL, React, Shell/Batch/Make, Figma, C/C++} \\ \vspace{1pt}
+\textbf{Cloud \& DevOps: }{Docker, Azure, GCP, Supabase, DigitalOcean, Linux, Sentry, FastAPI, GitHub Actions, Parasoft} \\ \vspace{1pt}
 }}
 \resumeSubHeadingListEnd
 
-
-% Projects 
-\section{Key Projects}
-
-    \resumeSubheading{AI Test Case Validator - QA Automation Platform}{India}{Technical Lead}{Mar'25 \textbf{--} Present}
-    \resumeItemListStart
-        \resumeItem{Developed business case and secured CTO approval to lead cross-functional team automating 600+ test cases across 5+ product lines}
-        \resumeItem{Designed embedding-based classification system with RAG pipeline and human-in-the-loop feedback for continuous improvement}
-        \resumeItem{Built multi-LLM system to automate 29-step test case validation; eliminated manual QA review across all product lines}
-        \resumeItem{Architected data ingestion and feedback capture system using PostgreSQL; containerized services with Docker and deployed to Azure}
-        \resumeItem{Developed version-controlled validation platform to replace ad-hoc review; projected to save 1,500+ engineering hours annually}
-        \resumeItemListEnd
-    
-    \resumeSubheading{HygroPro XP - Smart Moisture Analyzer}{India}{Technical Lead}{Jan'24 \textbf{--} Oct'24}
-    \resumeItemListStart
-        \resumeItem{Took over mid-project after lead's departure, launched 2 major releases; \$500K generated within 6 months}  
-        \resumeItem{Led a team of 3 developers, delivering 10 high-priority features and resolving 20+ bugs for the second release}  
-        \resumeItem{Developed Python-based data processing service for sensor analytics; reduced testing time by 1 month \& improved accuracy by 15\%}
-        \resumeItem{Improved code modularity \& application reliability by refactoring a monolithic 6000-line file; reduced its size by 33\%}
-    \resumeItemListEnd
-
-    \vspace{8pt}
-
-    \resumeSubheading{XMTCpro - Smart Gas Analyzer}{Ireland, India}{Consulting Engineer}{Aug'22 \textbf{--} Sep'24}
-    \resumeItemListStart
-        \resumeItem{Designed \& developed the complete UI/UX, encompassing 17 menu types \& 12 core features; generated \$400K+ revenue in 2 months}  
-        \resumeItem{Partnered with product and technology teams to develop features \& workflows focused on minimizing user errors}  
-        \resumeItem{Resolved 70+ bugs, including 40 critical issues within a focused 2-month period, significantly improving software stability}  
-        \resumeItem{Led SAST \& OSAT reviews for 7+ software releases, ensuring compliance and owning frontend design reviews}
-        \resumeItem{Oversaw static analysis (MISRA C compliance) \& collaborated with an external agency to achieve SIL 2 certification}
-    \resumeItemListEnd
-
-\vspace{10pt}
 
 \end{document}
